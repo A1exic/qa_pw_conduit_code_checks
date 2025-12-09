@@ -22,7 +22,6 @@ test.describe("Sign in positive tests", () => {
     await signInPage.fillEmailField(user.email);
     await signInPage.fillPasswordField(user.password);
     await signInPage.clickSignInButton();
-
     await homePage.assertYourFeedTabIsVisible();
   });
 });
